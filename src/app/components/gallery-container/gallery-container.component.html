@@ -1,0 +1,15 @@
+<section class="gallery-section">
+
+    <div class="table" [ngClass]="{'display-none': showModal}">
+        <ng-container *ngFor="let persona of personas">
+            <div class="img-container">
+                <img [src]="persona.picture.large" alt="" (click)="onSelectPersona(persona)">
+            </div>
+        </ng-container>
+    </div>
+
+    <ng-container *ngIf="showModal">
+        <modal-component (showModalHandler)="onShowModal($event)" [persona]="personaSelected"></modal-component>
+    </ng-container>
+    
+</section>

@@ -1,0 +1,77 @@
+.modal-section {
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal {
+    width: 85%;
+    height: 100%;
+    padding: 1em 0;
+    background-color: #ddd;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+
+.avatar-container img {
+    width: 80%;
+    height: 80%;
+}
+
+.info-container {
+    height: 80%;
+    flex: 1;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+label {
+    font-size: .7em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+p.name {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.hide-button {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 1080px) {
+    .modal {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 1em 1em;
+    }
+}

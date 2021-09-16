@@ -1,0 +1,31 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    gallery-container-component {
+        max-width: 85%;
+        min-width: 50%;
+        height: 100%;
+    }
+
+
+    @media screen and (max-width: 1080px) {
+
+        gallery-container-component {
+            min-width: 80%;
+            height: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+
+        gallery-container-component {
+            min-width: 60%;
+            height: 100%;
+        }
+    }

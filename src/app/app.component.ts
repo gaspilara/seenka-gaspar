@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'seenka-gaspar';
+
+  showModal: boolean = false;
+
+  onShowModal(event: boolean) {
+    this.showModal = event;
+  }
+
 }
